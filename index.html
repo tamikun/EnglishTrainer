@@ -315,11 +315,10 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         export
       </button>
-      <label class="btn" style="cursor:pointer" title="Import from JSON file">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        import
-        <input type="file" id="file-input" accept=".json" onchange="importData(event)">
-      </label>
+      <button class="btn" onclick="resetData()" title="Reset deck to original JSON data">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1015.3-8.7"/><path d="M3 4v5h5"/></svg>
+        reset
+      </button>
       <button class="btn btn-primary" onclick="openAdd()">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         new card
@@ -350,8 +349,34 @@ const STORE = 'vocabcards_v2';
 let cards = [];
 let activeTag = null;
 
-function load() {
-  try { cards = JSON.parse(localStorage.getItem(STORE) || '[]'); } catch(e) { cards = []; }
+async function load() {
+  try {
+    const saved = localStorage.getItem(STORE);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed)) {
+        cards = parsed;
+        return;
+      }
+    }
+  } catch (e) {
+    console.warn('Could not read saved deck, falling back to vocab-cards.json.', e);
+  }
+
+  try {
+    const res = await fetch('./vocab-cards.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (Array.isArray(data)) {
+      cards = data;
+      save();
+      return;
+    }
+  } catch (e) {
+    console.warn('Could not load vocab-cards.json; deck will stay empty until you add a card.', e);
+  }
+
+  cards = [];
 }
 function save() { localStorage.setItem(STORE, JSON.stringify(cards)); }
 function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
@@ -541,7 +566,7 @@ function deleteCard(id) {
   save(); closeModal(); render();
 }
 
-// ── Export / Import ──
+// ── Export / Reset ──
 function exportData() {
   const blob = new Blob([JSON.stringify(cards, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -552,31 +577,22 @@ function exportData() {
   URL.revokeObjectURL(url);
 }
 
-function importData(e) {
-  const file = e.target.files[0]; if (!file) return;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    try {
-      const data = JSON.parse(ev.target.result);
-      if (!Array.isArray(data)) throw new Error('invalid format');
-      const count = data.length;
-      if (!confirm(`Import ${count} card${count!==1?'s':''}? This will merge with your existing ${cards.length} card${cards.length!==1?'s':''}.`)) return;
-      const existingIds = new Set(cards.map(c => c.id));
-      let added = 0;
-      data.forEach(c => {
-        if (c.word && !existingIds.has(c.id)) {
-          cards.unshift({ id: c.id||uid(), word: c.word, note: c.note||'', tags: c.tags||[], created: c.created||Date.now() });
-          added++;
-        }
-      });
-      save(); render();
-      alert(`Imported ${added} new card${added!==1?'s':''}.`);
-    } catch(err) {
-      alert('Could not read file. Make sure it\'s a valid vocab cards JSON export.');
-    }
-  };
-  reader.readAsText(file);
-  e.target.value = '';
+async function resetData() {
+  if (!confirm('Reset the deck to the original JSON data? This will overwrite your current local changes.')) return;
+
+  try {
+    const res = await fetch('./vocab-cards.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if (!Array.isArray(data)) throw new Error('invalid format');
+
+    cards = data;
+    save();
+    render();
+    alert('Deck restored to the original JSON file.');
+  } catch (err) {
+    alert('Could not reset from the original file.');
+  }
 }
 
 // ── keyboard shortcut ──
@@ -591,16 +607,7 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── Seed data (only on first run) ──
-const seeds = [
-  { id: uid(), word: 'ephemeral', note: 'lasting for a very short time.\n\n"The ephemeral beauty of cherry blossoms reminds us to appreciate the present moment."', tags: ['adjective', 'poetry'], created: Date.now() - 86400000*3 },
-  { id: uid(), word: 'loquacious', note: 'tending to talk a great deal; talkative.\n\nSynonyms: garrulous, verbose, voluble', tags: ['adjective'], created: Date.now() - 86400000*2 },
-  { id: uid(), word: 'serendipity', note: 'the occurrence of events by chance in a happy or beneficial way.\n\nCoin by Horace Walpole in 1754, from a Persian fairy tale "The Three Princes of Serendip".', tags: ['noun', 'etymology'], created: Date.now() - 86400000 },
-];
-
-load();
-if (!cards.length) { cards = seeds; save(); }
-render();
+load().then(render).catch(() => render());
 </script>
 </body>
 </html>
