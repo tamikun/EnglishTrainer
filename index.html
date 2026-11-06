@@ -348,6 +348,7 @@
 const STORE = 'vocabcards_v2';
 let cards = [];
 let activeTag = null;
+let modalDirty = false;
 
 async function load() {
   try {
@@ -463,11 +464,36 @@ function renderGrid() {
 
 // ── Modal helpers ──
 function openModal(html) {
+  modalDirty = false;
   document.getElementById('modal-content').innerHTML = html;
   document.getElementById('modal-backdrop').classList.add('open');
+  bindModalDirtyTracking();
   setTimeout(() => { const f = document.getElementById('modal-content').querySelector('input,textarea'); if(f) f.focus(); }, 60);
 }
-function closeModal() { document.getElementById('modal-backdrop').classList.remove('open'); }
+
+function bindModalDirtyTracking() {
+  const root = document.getElementById('modal-content');
+  if (!root) return;
+  const fields = root.querySelectorAll('input, textarea');
+  fields.forEach(field => {
+    field.addEventListener('input', () => {
+      modalDirty = true;
+    });
+    field.addEventListener('change', () => {
+      modalDirty = true;
+    });
+  });
+}
+
+function closeModal(force = false) {
+  const backdrop = document.getElementById('modal-backdrop');
+  if (!force && modalDirty && !confirm('Discard unsaved changes?')) {
+    return;
+  }
+  backdrop.classList.remove('open');
+  modalDirty = false;
+}
+
 function backdropClick(e) { if (e.target === document.getElementById('modal-backdrop')) closeModal(); }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
@@ -501,7 +527,7 @@ function addCard() {
   const note = (document.getElementById('m-note').value||'').trim();
   const tags = parseTags(document.getElementById('m-tags').value||'');
   cards.unshift({ id: uid(), word, note, tags, created: Date.now() });
-  save(); closeModal(); render();
+  save(); modalDirty = false; closeModal(true); render();
 }
 
 // ── Detail ──
@@ -556,14 +582,14 @@ function saveEdit(id) {
   const tags = parseTags(document.getElementById('m-tags').value||'');
   const c = cards.find(x => x.id === id); if (!c) return;
   Object.assign(c, { word, note, tags, updated: Date.now() });
-  save(); closeModal(); render();
+  save(); modalDirty = false; closeModal(true); render();
 }
 
 // ── Delete ──
 function deleteCard(id) {
   if (!confirm('Delete this card? This cannot be undone.')) return;
   cards = cards.filter(x => x.id !== id);
-  save(); closeModal(); render();
+  save(); modalDirty = false; closeModal(true); render();
 }
 
 // ── Export / Reset ──

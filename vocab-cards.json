@@ -1,13 +1,155 @@
 [
   {
+    "id": "mw4s6a4btt55e",
+    "word": "carry-on",
+    "note": "a small bag or case that you carry onto a plane with you.\nex: Only one carry-on is allowed",
+    "tags": [
+      "noun",
+      "Inventions and discoveries"
+    ],
+    "created": 1793957831867,
+    "updated": 1793957846061
+  },
+  {
+    "id": "mw4rpztoe205m",
+    "word": "constraint",
+    "note": "~ restriction ~ limit\n/kənˈstreɪnt/\na thing that limits something or limits your freedom to do.\nex: This decision will impose serious constraints on all schools. \nex: We have to work within severe constraints.",
+    "tags": [
+      "noun",
+      "C1"
+    ],
+    "created": 1793957072028
+  },
+  {
+    "id": "mw4qtdrv9y1m2",
+    "word": "live up to something",
+    "note": "to do as well as someone's expectation\nex: He failed to live up his parents' expectations.",
+    "tags": [
+      "phrasal verbs"
+    ],
+    "created": 1793955550459,
+    "updated": 1793955563876
+  },
+  {
+    "id": "mw4nr9sc7jdlb",
+    "word": "monument",
+    "note": "a building, column, statue, etc. built to remind people of a famous person or event.\nex: The tower stands as a monument to the invasion of the island.",
+    "tags": [
+      "B2",
+      "noun",
+      "Inventions and discoveries"
+    ],
+    "created": 1793950413132,
+    "updated": 1793957840397
+  },
+  {
+    "id": "mw36fk5k6brb5",
+    "word": "retain",
+    "note": "to keep or continue to have something\nex: He struggled to retain control of the situation",
+    "tags": [
+      "B2",
+      "verb"
+    ],
+    "created": 1793860847048
+  },
+  {
+    "id": "mw36bm2chadxs",
+    "word": "critic",
+    "note": "a person who expresses about the good and bad qualities of books, music,...\nex: Several literary critics wrote unflattering reviews of her first novel.",
+    "tags": [
+      "B2",
+      "noun"
+    ],
+    "created": 1793860662900
+  },
+  {
+    "id": "mw361miueu1es",
+    "word": "lease",
+    "note": "a legal agreement that allows you to use a building, a piece of equipment or some land for a period of time, usually in return for rent.\nex: The lease runs out/expires next year.\nex: She signed a five-year lease to open her restaurant.",
+    "tags": [
+      "Buying and Selling",
+      "noun"
+    ],
+    "created": 1793860196934,
+    "updated": 1793860238297
+  },
+  {
+    "id": "mw35w97x4wx59",
+    "word": "inventory",
+    "note": "/ˈɪnvəntɔːri/\n~ stock\n-> a list of item such as property, goods in stock\nex: The manager is compiling an inventory of all the hotel furniture.\n-> the entire stock of a business, including materials, components, work in progress and finished product.\nex: Business inventories rose 0.7% in Oct",
+    "tags": [
+      "noun",
+      "Buying and Selling"
+    ],
+    "created": 1793859946413
+  },
+  {
+    "id": "mw32zklr7dhek",
+    "word": "objection",
+    "note": "a reason why you are not like or are opposed to something; a statement about this\nex: I have no objection to him coming to stay.\nex: He dismissed the objection that the plan was too expensive.",
+    "tags": [
+      "C1",
+      "noun"
+    ],
+    "created": 1793855062287
+  },
+  {
+    "id": "mw32jufb1qduz",
+    "word": "promptly",
+    "note": "punctually\nat the correct time and not late \nex: All produce will be refrigerated upon pickup to prevent spoilage (decay /dɪˈkeɪ/)",
+    "tags": [
+      "adv"
+    ],
+    "created": 1793854328519,
+    "updated": 1793854364570
+  },
+  {
+    "id": "mw32al71idsgv",
+    "word": "compile",
+    "note": "to produce a book, list, report by bringing together different items, articles, songs.\nto collect information in order to produce a book, list.\n\nex: The figures were compiled from a survey of 2000 schoolchildren.",
+    "tags": [
+      "verb",
+      "C1"
+    ],
+    "created": 1793853896653
+  },
+  {
+    "id": "mw1gefylawnfs",
+    "word": "demolish",
+    "note": "/dɪˈmɑːlɪʃ/ \nto pull, knock down a building or destroy something\nex: the factory is due to be demolished next year",
+    "tags": [
+      "verb"
+    ],
+    "created": 1793756658765
+  },
+  {
+    "id": "mw1fyxz4airjd",
+    "word": "congestion",
+    "note": "/kənˈdʒestʃən/\nthe state of being crowded and full of traffic. \nex: The heavily populated city always faces to the problem of daily traffic congestion and housing shortage.",
+    "tags": [
+      "noun"
+    ],
+    "created": 1793755935616
+  },
+  {
+    "id": "mw1foyfi1q2o5",
+    "word": "glory",
+    "note": "a great success that brings someone honor and makes them famous. \nex: I do all the work and he gets all the glory",
+    "tags": [
+      "C1",
+      "noun"
+    ],
+    "created": 1793755469646
+  },
+  {
     "id": "mvz9c6z2nco3k",
     "word": "metropolis",
-    "note": "a large, important city (often the capital city)\nex: Shanghai is an extraordinary place. Once a fishing village, it has grown into a (modern metropolis/modern city/modern capital) with skyscrapers to match any found in the cities of the USA.",
+    "note": "/məˈtrɑːpəlɪs/\na large, important city (often the capital city)\nex: Shanghai is an extraordinary place. Once a fishing village, it has grown into a (modern metropolis/modern city/modern capital) with skyscrapers to match any found in the cities of the USA.\n\n/ˌmetrəˈpɑːlɪtən/ metropolitan",
     "tags": [
       "Inventions and discoveries"
     ],
     "created": 1793623864143,
-    "updated": 1793623905581
+    "updated": 1793950502537
   },
   {
     "id": "mvz8unihju8k5",
@@ -3197,11 +3339,12 @@
   {
     "id": "msdzk9s5bducw",
     "word": "obligation",
-    "note": "the state of being forced to do something because it is your duty,\nex: military service obligation\nex: They reminded him of his contractual obligations.\nex: Protecting environment is our moral obligation.",
+    "note": "~ responsibility (with forces)\n\nthe state of being forced to do something because it is your duty,\n\nex: military service obligation\nex: They reminded him of his contractual obligations.\nex: Protecting environment is our moral obligation.\nex: You don't have any obligations or expectations from other people which give you a mental freedom.\nex: When I travel alone, I can make spontaneous decisions because I am under no obligation to follow other people.",
     "tags": [
       "B2"
     ],
-    "created": 1785807308165
+    "created": 1785807308165,
+    "updated": 1793956203078
   },
   {
     "id": "msebcz96hysw2",
