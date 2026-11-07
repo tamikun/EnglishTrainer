@@ -1,5 +1,195 @@
 [
   {
+    "id": "mw6foigi3rvrx",
+    "word": "payroll",
+    "note": "/ˈpeɪrəʊl/\na list of people employed by a company showing the amount of money to be paid to each of them.\nex: We have 500 people on the payroll",
+    "tags": [
+      "noun",
+      "Sending and receiving"
+    ],
+    "created": 1794057779826,
+    "updated": 1794057796348
+  },
+  {
+    "id": "mw6es537i2y7n",
+    "word": "yet",
+    "note": "-> used in negative sentence\nex: I haven't received a letter form him yet (at the end)\n\n-> to emphasize something is the best, longest, etc until now.\nex: This is his best movie yet (so far)\n\n-> as conjunction (meaning \"but\" or \"nevertheless\")\nex: The weather is freezing, yet she wore a T-shirt\nex: He studied all night, yet he failed the test",
+    "tags": [
+      "adv",
+      "B2"
+    ],
+    "created": 1794056269507,
+    "updated": 1794056971670
+  },
+  {
+    "id": "mw6drl4dihntz",
+    "word": "thus",
+    "note": "-> in this way; like this\nex: The universities have expanded, thus allowing many more people the chance of higher education.",
+    "tags": [
+      "B2",
+      "adv"
+    ],
+    "created": 1794054564013
+  },
+  {
+    "id": "mw6d1a1zbulcm",
+    "word": "assemble",
+    "note": "/əˈsembl/ \n-> to gather people or things into a group, or to fit together separate parts to build an object\nex: The student will assemble in a main hall",
+    "tags": [
+      "verb",
+      "C1"
+    ],
+    "created": 1794053336615
+  },
+  {
+    "id": "mw66b3i4noxnq",
+    "word": "aid",
+    "note": "/eɪd/\nto help doing something easier.\nex: Words will be displayed around the room to aid students with spelling.",
+    "tags": [
+      "B2",
+      "verb"
+    ],
+    "created": 1794042037372
+  },
+  {
+    "id": "mw662emrin0b9",
+    "word": "admission, permission, consent",
+    "note": "Entering or joining. ex: granted admission\nAllowing or authorizing an action\t\nVoluntarily agreeing with full awareness",
+    "tags": [
+      "comparison"
+    ],
+    "created": 1794041631891,
+    "updated": 1794042470739
+  },
+  {
+    "id": "mw65qmwyv6bgq",
+    "word": "prolong",
+    "note": "to make something last longer\nex: regular checkups prolong the life of office equipment.",
+    "tags": [
+      "verb"
+    ],
+    "created": 1794041082754
+  },
+  {
+    "id": "mw65po602u6r4",
+    "word": "appoint",
+    "note": "to choose somebody for a job, position or responsibility.\nex: The CEO appointed Mr Kim as division head,",
+    "tags": [
+      "C1",
+      "verb"
+    ],
+    "created": 1794041037720
+  },
+  {
+    "id": "mw65fhz2lwd7c",
+    "word": "in the foreseeable future",
+    "note": "ex: It's unlikely that the hospital will be closed in the foreseeable future.",
+    "tags": [
+      "idiom"
+    ],
+    "created": 1794040563134
+  },
+  {
+    "id": "mw6068lf0revl",
+    "word": "account for",
+    "note": "~ explain \nex: Car emission accounts for 40 percent of air pollution.",
+    "tags": [
+      "phrasal verbs"
+    ],
+    "created": 1794031732995
+  },
+  {
+    "id": "mw5zyfb29103p",
+    "word": "complimentary",
+    "note": "/ˌkɑːmplɪˈmentri/\n-> given free\nex: complimentary tickets for the show\nex: complimentary breakfast\n\n-> expressing approval, praise,..\nex: She was extremely complimentary about his work",
+    "tags": [
+      "adj"
+    ],
+    "created": 1794031368446
+  },
+  {
+    "id": "mw5ztokwwox0e",
+    "word": "provide .. with, inform .. of",
+    "note": "Please inform us of any changes in your circumstances\nPlease provide us with details of any changes",
+    "tags": [
+      "comparision"
+    ],
+    "created": 1794031147184,
+    "updated": 1794031163216
+  },
+  {
+    "id": "mw5zcj3aog3cg",
+    "word": "in/on behalf of somebody",
+    "note": "-> in behalf of: in order to help somebody\nex: He began a petition in behalf of the farmers.\n\n-> on behalf of: as representative of\nex: On behalf of the department, I would like to thank you all",
+    "tags": [
+      "idiom"
+    ],
+    "created": 1794030346918,
+    "updated": 1794030358910
+  },
+  {
+    "id": "mw5ytya23eqld",
+    "word": "confess to (doing) something",
+    "note": "ex: I must confess to knowing nothing about golf.",
+    "tags": [
+      "phrasal verbs",
+      "C1"
+    ],
+    "created": 1794029480138
+  },
+  {
+    "id": "mw5yonjldg2yn",
+    "word": "insist on",
+    "note": "~ demand\nex: 'Please come with us' - 'Very well then, if you insist (as you wish/if that's what you want)'\nex: She insisted on him wearing a suit",
+    "tags": [
+      "verb",
+      "B2",
+      "phrasal verbs"
+    ],
+    "created": 1794029232945,
+    "updated": 1794029360353
+  },
+  {
+    "id": "mw5ybdd8y7o7h",
+    "word": "proposal",
+    "note": "a formal suggestion or plan that is used for suggestion\nex: He approved a controversial proposal for a new marina complex.",
+    "tags": [
+      "noun",
+      "B2"
+    ],
+    "created": 1794028613228
+  },
+  {
+    "id": "mw5y6x7mgedn5",
+    "word": "object",
+    "note": "to say that you disagree with or oppose something.\nex: local resident objected to the proposed development.",
+    "tags": [
+      "verb",
+      "B2"
+    ],
+    "created": 1794028405666
+  },
+  {
+    "id": "mw5wyy08hx4ut",
+    "word": "on the tip of my tongue",
+    "note": "that means you're temporally unable to remember a specific word, name or a piece of information even though you feel certain that you know and you will remember it.\nex: Her name is on the tip of my tongue - give me a second to remember",
+    "tags": [
+      "word patterns"
+    ],
+    "created": 1794026353832
+  },
+  {
+    "id": "mw5wsfgdjltst",
+    "word": "for the sake of",
+    "note": "in order to keep something.\nex: I have to take some days off for the sake of my mental health",
+    "tags": [
+      "C1",
+      "word patterns"
+    ],
+    "created": 1794026049853,
+    "updated": 1794026072541
+  },
+  {
     "id": "mw4s6a4btt55e",
     "word": "carry-on",
     "note": "a small bag or case that you carry onto a plane with you.\nex: Only one carry-on is allowed",
@@ -13,12 +203,13 @@
   {
     "id": "mw4rpztoe205m",
     "word": "constraint",
-    "note": "~ restriction ~ limit\n/kənˈstreɪnt/\na thing that limits something or limits your freedom to do.\nex: This decision will impose serious constraints on all schools. \nex: We have to work within severe constraints.",
+    "note": "~ restriction ~ limit\n/kənˈstreɪnt/\na thing that limits something or limits your freedom to do.\nex: This decision will impose serious constraints on all schools. \nex: We have to work within severe constraints.\nex: Due to time constraints, the executives were not able to interview all the applicants.",
     "tags": [
       "noun",
       "C1"
     ],
-    "created": 1793957072028
+    "created": 1793957072028,
+    "updated": 1794032327760
   },
   {
     "id": "mw4qtdrv9y1m2",
@@ -2977,14 +3168,15 @@
   {
     "id": "ms3z82h1zzn96",
     "word": "prospect",
-    "note": "-> the possibility that something will happen\nex: improving prospects of job promotion",
+    "note": "/ˈprɑːspekt/\n-> the possibility that something will happen\nex: improving prospects of job promotion\n\nprospective /prəˈspektɪv/\n~  potential \nex: prospective buyers/employees",
     "tags": [
       "B2",
       "education",
       "Working and earning",
       "noun"
     ],
-    "created": 1785202077061
+    "created": 1785202077061,
+    "updated": 1794040080727
   },
   {
     "id": "ms47jtz1ows9z",
@@ -3053,12 +3245,13 @@
   {
     "id": "ms74r0k1za91n",
     "word": "inquire",
-    "note": "enquire (verb) -> British English'\n-> to ask something about information\nex: I called the school to inquire the application process.\n\ninquiry (noun) ~ enquiry (British)\n-> an official process to find out information\nex: The company received 100 inquiries from customers.",
+    "note": "enquire (verb) -> British English'\n-> to ask something about information\nex: I called the school to inquire the application process.\n\ninquiry (noun) ~ enquiry (British) /ɪnˈkwaɪəri/\n-> an official process to find out information\nex: The company received 100 inquiries from customers.",
     "tags": [
       "verb",
       "Buying and Selling"
     ],
-    "created": 1785392757649
+    "created": 1785392757649,
+    "updated": 1794056321939
   },
   {
     "id": "ms79urzw1m0yf",
@@ -3207,11 +3400,12 @@
   {
     "id": "msbbx1remsxjk",
     "word": "appeal",
-    "note": "-> Noun: attractive\n\n-> Verb: to make a request for something needs an immediate action\nex: We are appealing on behalf of all the victims of this terrible disaster. (ask for money)\nex: (appeal to somebody for something) The government appealed to the British people for help.",
+    "note": "-> Noun: the quality that makes something attractive\nex: He was beginning to understand the appeal of living in the countryside.\n\n-> Verb: to make a request for something needs an immediate action\nex: We are appealing on behalf of all the victims of this terrible disaster. (ask for money)\n\n-> to attract or interest somebody\nex: (appeal to somebody for something) The government appealed to the British people for help.",
     "tags": [
       "B2"
     ],
-    "created": 1785646661162
+    "created": 1785646661162,
+    "updated": 1794030768645
   },
   {
     "id": "msbc1xxucu3sl",
@@ -3223,11 +3417,13 @@
   {
     "id": "msbcm6kepl1t1",
     "word": "consent",
-    "note": "permission to do something\nex: written consent \nex: a record of their written consent must be on this file\nex: At any time during the study, parents could withdraw their consent.\nex: Doctors must obtain the informed consent of all patients before giving any treatment",
+    "note": "/kənˈsent/\npermission to do something\nex: written consent \nex: a record of their written consent must be on this file\nex: At any time during the study, parents could withdraw their consent.\nex: Doctors must obtain the informed consent of all patients before giving any treatment",
     "tags": [
+      "noun",
       "C1"
     ],
-    "created": 1785647833790
+    "created": 1785647833790,
+    "updated": 1794041541697
   },
   {
     "id": "mscvcj3leujg3",
@@ -3348,13 +3544,14 @@
   },
   {
     "id": "msebcz96hysw2",
-    "word": "inform",
-    "note": "to tell somebody information about something\nex: I have not been informed when the ceremony will take place.",
+    "word": "inform (somebody of something)",
+    "note": "to tell somebody information about something\nex: I have not been informed when the ceremony will take place.\n\nex: Please inform us of any changes of address.",
     "tags": [
       "Sending and receiving",
       "B2"
     ],
-    "created": 1785827123322
+    "created": 1785827123322,
+    "updated": 1794030661453
   },
   {
     "id": "msebh53drhfqw",
